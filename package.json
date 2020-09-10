@@ -1,0 +1,23 @@
+{
+  "name": "design-patterns-js-gof",
+  "version": "1.0.0",
+  "description": "Design patterns implemented in javascipt based on Gang of Four.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "design",
+    "patterns",
+    "javascript",
+    "gof"
+  ],
+  "author": "Ling Mao",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2"
+  }
+}
