@@ -64,8 +64,12 @@ import PizzaFactory from "./factory";
   * AbstractFactory
   */
  class BaseToppingFactory {
-    createCheese(){}
-    createSauce(){}
+    createCheese() {
+        console.log("please create cheese object.");
+    }
+    createSauce() { 
+        console.log("please create sauce object.")
+    }
  }
 
  /**
@@ -110,8 +114,8 @@ class Pizza {
         this.addIngredients();
     }
     addIngredients() {
-        this.toppingFactory.createCheese();
-        this.toppingFactory.createSauce();
+        this.cheese = this.toppingFactory.createCheese();
+        this.sauce = this.toppingFactory.createSauce();
     }
 }
 
