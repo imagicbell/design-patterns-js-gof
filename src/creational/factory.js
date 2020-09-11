@@ -18,14 +18,14 @@
           throw "No such pizza"
       }
 
-      pizza.addIngredients(type);
+      pizza.addIngredients();
       return pizza;
     }
  }
 
  class Pizza {
-    addIngredients(type) {
-      this.type = type;
+    addIngredients() {
+      console.log("please add ingredient");
     }
 
     bake() {
@@ -34,14 +34,14 @@
  }
 
  class CheesePizza extends Pizza {
-    bake() {
-      console.log("bake 25min")
+    addIngredients() {
+      this.ingredient = "cheese";
     }
  }
 
  class VeggiePizza extends Pizza {
-    bake() {
-      console.log("bake 15min")
+    addIngredients() {
+      this.ingredient = "veggie";
     }
  }
 
