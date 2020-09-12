@@ -5,11 +5,9 @@
  * while abstract factory emphasize creating a family of related objects in one go.
  */
 
-const { default: PizzaFactory } = require("./factory");
-
- /**
-  * Product
-  */
+/**
+ * Product
+ */
 class Pizza {
     constructor() {
         this.base = null;
@@ -23,27 +21,7 @@ class PizzaBuilder {
     constructor() {
         this.pizza = new Pizza();
     }
-
-    makeBase() {
-        console.log("this step is to make base.");
-        return this;
-    }
-
-    addMeat() {
-        console.log("this step is to add meat.");
-        return this;
-    }
-
-    addSauce() {
-        console.log("this step is to add sauce.");
-        return this;
-    }
-
-    addCheese() {
-        console.log("this step is to add cheese.");
-        return this;
-    }
-
+    
     final() {
         return this.pizza;
     }
@@ -95,7 +73,6 @@ class GourmetPizzaBuilder extends PizzaBuilder {
 
 
 export {
-    PizzaBuilder,
     SicilianPizzaBuilder,
     GourmetPizzaBuilder,
 }

@@ -23,23 +23,13 @@
     }
  }
 
- class Pizza {
-    addIngredients() {
-      console.log("please add ingredient");
-    }
-
-    bake() {
-      console.log("default bake 20min")
-    }
- }
-
- class CheesePizza extends Pizza {
+ class CheesePizza {
     addIngredients() {
       this.ingredient = "cheese";
     }
  }
 
- class VeggiePizza extends Pizza {
+ class VeggiePizza {
     addIngredients() {
       this.ingredient = "veggie";
     }
