@@ -1,6 +1,5 @@
 /**
- * Adapter pattern is used to convert the interface of a class into another interface clients expect. 
- * Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+ * Adapter pattern allows two incompatible classes to work together by wrapping the interface of one class.
  * It can be applied to the senario when introduce a new feature into the existing system but the method of the new class can not be called directly by the system.
  */
 
