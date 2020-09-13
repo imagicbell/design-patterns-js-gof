@@ -1,7 +1,7 @@
 import pizza from '../prototype';
 
 describe("Prototype", () => {
-	test("", () => {
+	test("should create an object by prototype.", () => {
 		const myPizza = Object.create(pizza, { meat: { value: "chicken" }});
 		myPizza.bake();
 		expect(myPizza.base).toBe("classic");
